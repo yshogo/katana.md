@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
-  get 'articles/show'
-
-  get 'articles/new'
-
-  get 'articles/edit'
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'articles#show'
+  get  '/show', to:'articles#show'
+  get '/new' ,to:'articles#new'
+  get '/edit',to:'articles#edit'
 end
