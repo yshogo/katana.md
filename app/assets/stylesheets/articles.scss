@@ -1,3 +1,9 @@
-// Place all the styles related to the Articles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.parent{
+  display: table;
+  width: 100%;
+}
+
+#editor,#preview{
+  display: table-cell;
+  width: 50%;
+}

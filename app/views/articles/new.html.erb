@@ -1,7 +1,23 @@
 <h1>投稿する</h1>
-<p>Find me in app/views/articles/new.html.erb</p>
 
-<textarea rows="10" cols="60" id="user_write"></textarea>
-<p id="markdown"></p>
+<div class="parent">
 
-<p id="preview"></p>
+
+    <%= form_for @article do |f| %>
+        <p>
+          <%= f.text_field :title %>
+        </p>
+
+      <div id="editor">
+        <p>
+          <%= f.text_area :article, :size=>"50x30" %>
+        </p>
+      </div>
+
+      <div>
+        <%= f.submit "投稿する" %>
+      </div>
+    <% end %>
+
+  <div id="preview"></div>
+</div>
